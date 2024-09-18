@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-09-17 16:06:35.467709",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "candidate",
+  "interviewer",
+  "roll_applied",
+  "interview_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "candidate",
+   "fieldtype": "Link",
+   "label": "Candidate",
+   "options": "Candidate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "interviewer",
+   "fieldtype": "Link",
+   "label": "Interviewer",
+   "options": "Interviewer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "candidate.rol_applied",
+   "fieldname": "roll_applied",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Roll Applied",
+   "reqd": 1
+  },
+  {
+   "fieldname": "interview_date",
+   "fieldtype": "Date",
+   "label": "Interview Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Hired,\nRejected,\nIn Progress"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-18 11:25:32.198067",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Interview Schedule",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

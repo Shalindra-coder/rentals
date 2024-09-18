@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-09-17 15:59:52.620457",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "exprience",
+  "skills",
+  "rol_applied"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "exprience",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Exprience",
+   "reqd": 1
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Skills",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rol_applied",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Rol Applied",
+   "options": "Front-end Developer,\nBeck-end Developer,\nFull-stack Developer",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-18 11:25:13.272847",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Candidate",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
